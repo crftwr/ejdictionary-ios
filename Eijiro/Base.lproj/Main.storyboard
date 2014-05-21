@@ -31,10 +31,16 @@
                                     <outlet property="delegate" destination="kh9-bI-dsS" id="wrH-lV-hrJ"/>
                                 </connections>
                             </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="crz-ic-WHT">
+                                <rect key="frame" x="150" y="306" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="crz-ic-WHT" id="7y0-aw-JPt"/>
                         <outlet property="searchBar" destination="lV7-UV-LL6" id="Vmq-rU-oI0"/>
                         <outlet property="webView" destination="KS9-yL-Erv" id="SHw-9w-Z0u"/>
                     </connections>
