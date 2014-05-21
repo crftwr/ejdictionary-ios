@@ -31,7 +31,12 @@
                                     <outlet property="delegate" destination="kh9-bI-dsS" id="wrH-lV-hrJ"/>
                                 </connections>
                             </searchBar>
-                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="crz-ic-WHT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oST-ez-VNI">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="crz-ic-WHT">
                                 <rect key="frame" x="150" y="306" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,6 +47,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="crz-ic-WHT" id="7y0-aw-JPt"/>
                         <outlet property="searchBar" destination="lV7-UV-LL6" id="Vmq-rU-oI0"/>
+                        <outlet property="tableView" destination="oST-ez-VNI" id="kJa-Be-RNj"/>
                         <outlet property="webView" destination="KS9-yL-Erv" id="SHw-9w-Z0u"/>
                     </connections>
                 </viewController>
