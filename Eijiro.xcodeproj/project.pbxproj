@@ -21,6 +21,7 @@
 		3311E9EA192C3FA9007013F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3311E9CC192C3FA9007013F9 /* UIKit.framework */; };
 		3311E9F2192C3FA9007013F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3311E9F0192C3FA9007013F9 /* InfoPlist.strings */; };
 		3311E9F4192C3FA9007013F9 /* EijiroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311E9F3192C3FA9007013F9 /* EijiroTests.m */; };
+		3345BBCE192E2C3C00A0CF07 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3345BBD0192E2C3C00A0CF07 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		3311E9EF192C3FA9007013F9 /* EijiroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EijiroTests-Info.plist"; sourceTree = "<group>"; };
 		3311E9F1192C3FA9007013F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3311E9F3192C3FA9007013F9 /* EijiroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EijiroTests.m; sourceTree = "<group>"; };
+		3345BBC9192E288C00A0CF07 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3345BBCF192E2C3C00A0CF07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3345BBD1192E2C4400A0CF07 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			children = (
 				3311E9D0192C3FA9007013F9 /* Eijiro-Info.plist */,
 				3311E9D1192C3FA9007013F9 /* InfoPlist.strings */,
+				3345BBD0192E2C3C00A0CF07 /* Localizable.strings */,
 				3311E9D4192C3FA9007013F9 /* main.m */,
 				3311E9D6192C3FA9007013F9 /* Eijiro-Prefix.pch */,
 			);
@@ -211,6 +216,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 3311E9BC192C3FA9007013F9;
 			productRefGroup = 3311E9C6192C3FA9007013F9 /* Products */;
@@ -229,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3311E9E1192C3FA9007013F9 /* Images.xcassets in Resources */,
+				3345BBCE192E2C3C00A0CF07 /* Localizable.strings in Resources */,
 				3311E9D3192C3FA9007013F9 /* InfoPlist.strings in Resources */,
 				3311E9DC192C3FA9007013F9 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +285,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3311E9D2192C3FA9007013F9 /* en */,
+				3345BBC9192E288C00A0CF07 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -296,6 +304,15 @@
 				3311E9F1192C3FA9007013F9 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3345BBD0192E2C3C00A0CF07 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3345BBCF192E2C3C00A0CF07 /* en */,
+				3345BBD1192E2C4400A0CF07 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
