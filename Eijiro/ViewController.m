@@ -16,9 +16,12 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (assign) int webViewLoadingCount;
+@property NSMutableArray * historyList;
 
 - (void)startLoading:(NSString*)text;
 - (void)scrollToDictionaryContents;
+- (void)addHistory:(NSString*)text;
+- (void)saveData;
 
 @end
 
@@ -33,6 +36,12 @@
     self.webView.scrollView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    self.historyList = [NSMutableArray array];
+    {
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        [self.historyList addObjectsFromArray: [defaults stringArrayForKey:@"historyList"] ];
+    }
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }
@@ -69,6 +78,8 @@
     {
         NSLog(@"Word: %@", text);
         
+        [self addHistory: text];
+        
         NSString * escaped = [text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
         NSString * url_string = [NSString stringWithFormat: @"http://eow.alc.co.jp/sp/search.html?q=%@&pg=1", escaped ];
@@ -78,9 +89,48 @@
         NSURL * url = [NSURL URLWithString:url_string];
         NSURLRequest * request = [NSURLRequest requestWithURL:url];
         
+        self.webView.alpha = 0.0f;
+        
         self.webViewLoadingCount = 0;
         [self.webView loadRequest: request];
     }
+}
+
+- (void)addHistory:(NSString *)text
+{
+    // 古くて重複する履歴を削除する
+    for( int i=0 ; i<self.historyList.count ; )
+    {
+        if([ self.historyList[i] isEqualToString:text ])
+        {
+            [self.historyList removeObjectAtIndex:i];
+            continue;
+        }
+        ++i;
+    }
+    
+    // 先頭に履歴を挿入
+    [self.historyList insertObject:text atIndex:0];
+
+    // 個数を制限
+    const int maxItems = 100;
+    if(self.historyList.count>maxItems)
+    {
+        [self.historyList removeObjectsInRange:NSMakeRange(maxItems, self.historyList.count-maxItems)];
+    }
+    
+    // 画面を更新
+    [self.tableView reloadData];
+    
+    // 保存
+    [self saveData];
+}
+
+- (void)saveData
+{
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.historyList forKey:@"historyList"];
+    [defaults synchronize];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
@@ -131,16 +181,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.historyList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Hello";
+    cell.textLabel.text = self.historyList[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.searchBar.text = self.historyList[indexPath.row];
+
+    [self startLoading:self.searchBar.text];
 }
 
 @end
