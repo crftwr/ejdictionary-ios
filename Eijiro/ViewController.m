@@ -14,7 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property int webViewLoadingCount;
+
+@property (assign) int webViewLoadingCount;
 
 - (void)startLoading:(NSString*)text;
 - (void)scrollToDictionaryContents;
@@ -30,9 +31,10 @@
     self.searchBar.delegate = self;
     self.webView.delegate = self;
     self.webView.scrollView.delegate = self;
+    self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
-    //[self.activityIndicator stopAnimating];
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,6 +122,25 @@
 - (void)scrollToDictionaryContents
 {
     [self.webView.scrollView setContentOffset:CGPointMake(0.0f,160.0f) animated:false];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = @"Hello";
+    
+    return cell;
 }
 
 @end
