@@ -11,14 +11,28 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="686.72998"
-   height="699.91797"
+   width="120"
+   height="120"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="icon.svg">
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="C:\project\ejdictionary-ios\Eijiro\icon120.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient3899">
+      <stop
+         style="stop-color:#afd7f8;stop-opacity:1;"
+         offset="0"
+         id="stop3901" />
+      <stop
+         style="stop-color:#cce6fa;stop-opacity:1;"
+         offset="1"
+         id="stop3903" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6578">
       <stop
@@ -468,27 +482,6 @@
        x2="320.40744"
        y2="327.25528"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6302"
-       id="linearGradient6312"
-       x1="10.149716"
-       y1="587.11877"
-       x2="65.599129"
-       y2="302.61435"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2959104,0,0,1.2959104,-429.92957,167.13365)" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6578"
-       id="radialGradient6592"
-       cx="320.00031"
-       cy="252.90602"
-       fx="320.00031"
-       fy="252.90602"
-       r="84.730316"
-       gradientTransform="matrix(1,0,0,0.95897503,0,11.971064)"
-       gradientUnits="userSpaceOnUse" />
     <filter
        id="filter6690"
        inkscape:label="Metallized paint"
@@ -611,6 +604,15 @@
            in="SourceGraphic" />
       </feMerge>
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3899"
+       id="linearGradient3907"
+       x1="64.285713"
+       y1="9.9999971"
+       x2="64.285667"
+       y2="112.14285"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -619,21 +621,33 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="286.28052"
-     inkscape:cy="349.72959"
+     inkscape:zoom="2.8"
+     inkscape:cx="42.074959"
+     inkscape:cy="66.672655"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="992"
-     inkscape:window-height="764"
-     inkscape:window-x="825"
-     inkscape:window-y="110"
+     inkscape:window-width="1194"
+     inkscape:window-height="827"
+     inkscape:window-x="553"
+     inkscape:window-y="128"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="false"
+     inkscape:object-paths="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-nodes="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3911"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -642,7 +656,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -650,42 +664,91 @@
      inkscape:label="レイヤー 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-31.638386,-162.41199)">
+     transform="translate(-31.638386,-742.32996)">
+    <rect
+       style="fill:url(#linearGradient3907);fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect3121"
+       width="123.92852"
+       height="122.85712"
+       x="-1.4285716"
+       y="-0.71428478"
+       transform="translate(31.638386,742.32996)"
+       rx="6.0714288"
+       ry="7.3494062" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:0.53649634;stroke:none"
+       id="path3917"
+       sodipodi:cx="59.642857"
+       sodipodi:cy="9.8214293"
+       sodipodi:rx="96.071426"
+       sodipodi:ry="35.892857"
+       d="m 155.71428,9.8214293 a 96.071426,35.892857 0 1 1 -192.14285,0 96.071426,35.892857 0 1 1 192.14285,0 z"
+       transform="translate(34.138386,742.68711)" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:MS PGothic;-inkscape-font-specification:MS PGothic Bold"
+       x="58.066959"
+       y="778.04425"
+       id="text3913"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3915"
+         x="58.066959"
+         y="778.04425"
+         style="font-size:24px">英⇔日</tspan></text>
     <g
-       id="layer1-94"
-       inkscape:label="レイヤー 1"
-       transform="translate(7.1194952e-7,-4.3238185e-6)"
-       inkscape:export-filename="C:\project\ejdictionary-ios\Eijiro\icon60.png"
-       inkscape:export-xdpi="15.43038"
-       inkscape:export-ydpi="15.43038">
+       id="g3960"
+       transform="matrix(1.0172795,0,0,0.708341,57.709287,790.39008)">
+      <path
+         id="path3922"
+         d="M 68.244,24.082 23.25,0.89 C 17.088,-2.357 4.936,3.916 1.445,9.436 -0.114,11.902 0.002,13.685 0.002,14.692 l 0.555,52.373 c 0.037,1.111 1.438,2.612 2.637,3.348 2.496,1.531 40.297,25.131 41.369,25.799 0.576,0.358 1.256,0.525 1.928,0.525 0.572,0 1.146,-0.127 1.666,-0.385 C 49.293,95.794 50,94.71 50,93.532 V 38.523 C 50,37.378 49.332,36.32 48.244,35.748 L 7.348,12.918 c 0.463,-0.899 2.283,-2.801 5.627,-4.552 3.523,-1.845 6.162,-1.148 6.768,-0.914 0,0 39.248,21.004 40.449,21.629 1.195,0.624 1.219,0.718 1.219,1.786 0,1.067 0,52.2 0,52.2 0,2.604 2.645,3.67 4.584,3.67 1.938,0 4.006,-1.9 4.006,-3.67 V 26.858 C 70,25.713 69.328,24.654 68.244,24.082 z"
+         inkscape:connector-curvature="0" />
       <g
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="C:\project\ejdictionary-ios\Eijiro\icon60.png"
-         inkscape:label="Layer 1"
-         id="layer1-9"
-         transform="translate(135.95183,-273.35914)">
-        <rect
-           style="fill:url(#linearGradient6312);fill-opacity:1;fill-rule:evenodd;stroke:#0262e1;stroke-width:10;stroke-miterlimit:4;stroke-opacity:0.32846716;stroke-dasharray:none;filter:url(#filter4348)"
-           id="rect3023"
-           width="350.76761"
-           height="352.07932"
-           x="-556.72314"
-           y="568.09271"
-           rx="34.594482"
-           ry="31.427916"
-           transform="matrix(0.68109062,-0.69417184,0.68109062,0.69417184,-8.0467603,4.450559)" />
-        <path
-           sodipodi:type="arc"
-           style="fill:url(#radialGradient6592);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter6690)"
-           id="path6576"
-           sodipodi:cx="342.7399"
-           sodipodi:cy="291.79944"
-           sodipodi:rx="82.730316"
-           sodipodi:ry="79.254257"
-           d="m 425.47021,291.79944 c 0,43.77092 -37.03962,79.25426 -82.73031,79.25426 -45.69069,0 -82.73032,-35.48334 -82.73032,-79.25426 0,-43.77092 37.03963,-79.25426 82.73032,-79.25426 45.69069,0 82.73031,35.48334 82.73031,79.25426 z"
-           transform="matrix(1.514122,0,0,1.5774079,-278.16617,329.85687)" />
-      </g>
+         id="g3924">
+</g>
+      <g
+         id="g3926">
+</g>
+      <g
+         id="g3928">
+</g>
+      <g
+         id="g3930">
+</g>
+      <g
+         id="g3932">
+</g>
+      <g
+         id="g3934">
+</g>
+      <g
+         id="g3936">
+</g>
+      <g
+         id="g3938">
+</g>
+      <g
+         id="g3940">
+</g>
+      <g
+         id="g3942">
+</g>
+      <g
+         id="g3944">
+</g>
+      <g
+         id="g3946">
+</g>
+      <g
+         id="g3948">
+</g>
+      <g
+         id="g3950">
+</g>
+      <g
+         id="g3952">
+</g>
     </g>
   </g>
 </svg>
