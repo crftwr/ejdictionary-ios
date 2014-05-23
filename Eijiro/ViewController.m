@@ -42,6 +42,8 @@
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
         [self.historyList addObjectsFromArray: [defaults stringArrayForKey:@"historyList"] ];
     }
+    
+    [self.searchBar setPlaceholder:NSLocalizedString(@"SearchBarPlaceHolder",nil)];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }
